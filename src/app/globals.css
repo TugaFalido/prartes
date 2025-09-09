@@ -1,26 +1,19 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --star-bg: radial-gradient(2px 2px at 20% 30%, #ffffff 50%, transparent 51%),
+             radial-gradient(1.5px 1.5px at 40% 70%, #ffffff 50%, transparent 51%),
+             radial-gradient(1.2px 1.2px at 80% 20%, #ffffff 50%, transparent 51%),
+             radial-gradient(1.2px 1.2px at 65% 40%, #ffffff 50%, transparent 51%),
+             radial-gradient(1.5px 1.5px at 15% 80%, #ffffff 50%, transparent 51%);
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.bg-starfield {
+  background:
+    var(--star-bg),
+    radial-gradient(1500px 800px at 50% 120%, #0b0e17 35%, #070a12 70%, #04060b 100%);
+  background-repeat: repeat;
+  background-size: auto, cover;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+.container-px { @apply px-4 sm:px-6 lg:px-8; }

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Section from "./Section";
-import { projects } from "../data/projects";
+import { projects } from "@/data/projects";
 
 export default function ProjectsGrid() {
   return (

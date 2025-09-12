@@ -1,4 +1,3 @@
-// src/app/page.tsx
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import ServiceCards from "@/components/ServiceCards";
@@ -12,7 +11,7 @@ export default function Page() {
   return (
     <>
       <Navbar />
-      <Hero />
+      <Hero />    
       <ServiceCards />
       <ProjectsGrid />
       <EventsList />

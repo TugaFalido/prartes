@@ -1,5 +1,5 @@
 import Section from "./Section";
-import { events } from "../data/events";
+import { events } from "@/data/events";
 
 export default function EventsList() {
   return (

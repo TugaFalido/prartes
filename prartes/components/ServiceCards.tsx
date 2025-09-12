@@ -1,5 +1,5 @@
 import Section from "./Section";
-import { serviceBuckets } from "../data/services";
+import { serviceBuckets } from "@/data/services";
 
 export default function ServiceCards() {
   return (
